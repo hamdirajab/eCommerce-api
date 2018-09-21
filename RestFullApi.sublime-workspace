@@ -1,0 +1,514 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ti",
+				"title\tTag"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"in",
+				"interval"
+			],
+			[
+				"ser",
+				"srcset"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"get",
+				"getAttribute"
+			],
+			[
+				"i",
+				"images"
+			],
+			[
+				"im",
+				"imgSrc"
+			],
+			[
+				"img",
+				"imgSrc"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"tim",
+				"timerRunning"
+			],
+			[
+				"or",
+				"originTextMatch"
+			],
+			[
+				"test",
+				"testWrapper"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"tex",
+				"textEntered"
+			],
+			[
+				"the",
+				"theTimer"
+			],
+			[
+				"re",
+				"reset"
+			],
+			[
+				"fu",
+				"fun\tFunction"
+			],
+			[
+				"tes",
+				"testArea"
+			],
+			[
+				"s",
+				"second"
+			],
+			[
+				"a",
+				"appendChild"
+			],
+			[
+				"ca",
+				"captionElement"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"us",
+				"user"
+			],
+			[
+				"user",
+				"users"
+			],
+			[
+				"r",
+				"require"
+			],
+			[
+				"jon",
+				"json_decode"
+			],
+			[
+				"Ca",
+				"Cache::get\tRetrieve an Item from the Cache"
+			],
+			[
+				"me",
+				"message"
+			],
+			[
+				"ma",
+				"message"
+			],
+			[
+				"m",
+				"massage"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"DB",
+				"DB::transaction\tExecute a Closure within a transaction."
+			],
+			[
+				"co",
+				"con\tfunction __construct"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"req",
+				"req\trequire …"
+			],
+			[
+				"ov",
+				"overload"
+			],
+			[
+				"exists",
+				"function_exists"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"github",
+				"githubUser"
+			],
+			[
+				"bycr",
+				"bcrypt\tL5 Bcrypt"
+			],
+			[
+				"config",
+				"config\tL5 Config"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Paa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"set Syntax :php",
+				"Set Syntax: PHP"
+			],
+			[
+				"Menu",
+				"View: Toggle Menu"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 378.0,
+		"history":
+		[
+			"php artisan",
+			"php artisan serve"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/RestFullApi"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/RestFullApi/app/p.php",
+		"/C/xampp/htdocs/RestFullApi/.editorconfig",
+		"/C/xampp/htdocs/RestFullApi/app/User.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/VerifyCsrfToken.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/TrustProxies.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/TrimStrings.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/EncryptCookies.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/CheckForMaintenanceMode.php",
+		"/C/xampp/htdocs/WP/wp-content/themes/Glaobl universty/functions.php",
+		"/C/xampp/htdocs/WP/wp-content/themes/Glaobl universty/index.php",
+		"/C/xampp/htdocs/WP/wp-content/themes/Glaobl universty/page.php",
+		"/C/xampp/htdocs/WP/wp-content/themes/Glaobl universty/footer.php",
+		"/C/xampp/htdocs/WP/wp-content/themes/Glaobl universty/header.php",
+		"/C/Users/hamdi/Desktop/new/university-static-master/style.css",
+		"/C/Users/hamdi/Desktop/new/university-static-master/js/scripts.js",
+		"/C/xampp/htdocs/WP/wp-content/themes/Glaobl universty/style.css",
+		"/C/xampp/htdocs/WP/wp-content/themes/Glaobl universty/single.php",
+		"/C/xampp/htdocs/sampleApps/resources/views/layouts/app.blade.php",
+		"/C/xampp/htdocs/sampleApps/resources/views/about.blade.php",
+		"/C/xampp/htdocs/sampleApps/resources/views/content.blade.php",
+		"/C/xampp/htdocs/sampleApps/routes/web.php",
+		"/C/xampp/htdocs/sampleApps/resources/views/home.blade.php",
+		"/C/xampp/htdocs/sampleApps/resources/views/app.blade.php",
+		"/C/xampp/htdocs/sampleApps/resources/views/layouts",
+		"/C/xampp/htdocs/jq-ajax-project/javascript.php",
+		"/C/Users/hamdi/Desktop/jQuery Project/48.html",
+		"/C/Users/hamdi/Desktop/jQuery Project/jquery-3.3.1.js",
+		"/C/Users/hamdi/Desktop/jQuery Project/9.html",
+		"/C/Users/hamdi/Desktop/jQuery Project/1.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_08/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_07/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_07/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_07/script.min.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_06/style.css",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_06/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_06/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_05/style.css",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_05/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_05/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_04/style.css",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_04/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_04/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_03/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_03/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_03/style.css",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_02/style.css",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_02/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/11_02/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/10_06/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/10_06/JS/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/10_05/JS/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/10_05/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/10_03/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/10_03/JS/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/10_02/JS/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/10_02/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/09_03/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/09_03/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/09_03/JS/chanceScript.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/09_03/JS/primeScript.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/09_02/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/09_02/JS/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/09_02/favicon.ico",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/09_01/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/09_01/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_08_DONE/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_07/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_07/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_06/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_06/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_05/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_05/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_04/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_04/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_02/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_02/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_02/style.css",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_05/JS/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_05/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_04/JS/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_04/mouse-tracker.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_04/JS/tracker-script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_03/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_03/JS/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/06_07_DONE/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/06_07/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/06_02/style.css",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/06_02/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/06_02/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/05_07/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/05_07/JS/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/05_06/JS/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/05_06/moonwalk.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/05_05/JS/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_12/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_12/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_10/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_10/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_08/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_08/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_07/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_07/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_06/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_06/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_05/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_05/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_04/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_04/04_04/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_04/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_02/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_02/script.js",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_01/index.html",
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_01/script.js",
+		"/C/xampp/htdocs/realtime-redis-app/routes/web.php",
+		"/C/xampp/htdocs/realtime-redis-app/config/broadcasting.php",
+		"/C/xampp/htdocs/realtime-redis-app/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/realtime-redis-app/socket.js",
+		"/C/xampp/htdocs/realtime-redis-app/app/Events/UserSignedUp.php",
+		"/C/xampp/htdocs/realtime-redis-app/.env",
+		"/C/xampp/htdocs/realtime-redis-app/config/database.php",
+		"/C/xampp/htdocs/realtime-redis-app/config/cache.php",
+		"/C/Users/hamdi/Desktop/chat-lasson/node_modules/vue/src/core/instance/index.js",
+		"/C/Users/hamdi/Desktop/chat-lasson/node_modules/vue/dist/vue.js",
+		"/C/Users/hamdi/AppData/Roaming/Sublime Text 3/Packages/User/42-headers.sublime-settings",
+		"/C/Users/hamdi/Desktop/imagen fun/test.php",
+		"/C/xampp/htdocs/track-document/app/Http/Controllers/DocumentController.php",
+		"/C/xampp/htdocs/track-document/resources/views/document/show.blade.php"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 67.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "RestFullApi.sublime-project",
+	"replace":
+	{
+		"height": 73.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				".editorconfig"
+			],
+			[
+				"Comma",
+				"vendor\\composer\\autoload_classmap.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 304.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
