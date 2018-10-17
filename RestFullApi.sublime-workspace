@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"inter",
+				"array_intersect"
+			],
+			[
+				"interse",
+				"array_intersect"
+			],
+			[
+				"sp",
+				"specified"
+			],
+			[
+				"Ca",
+				"Category"
+			],
+			[
+				"error",
+				"errorCode"
+			],
+			[
+				"class",
+				"class_basename〔function〕"
+			],
+			[
+				"Valid",
+				"ValidationException"
+			],
+			[
+				"us",
+				"use"
+			],
+			[
+				"re",
+				"ret\treturn"
+			],
+			[
+				"v",
+				"verification_token"
+			],
+			[
+				"val",
+				"validate〔function〕"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"bel",
+				"belongsTo〔function〕"
+			],
+			[
+				"fun",
+				"fun\tfunction …"
+			],
+			[
 				"ti",
 				"title\tTag"
 			],
@@ -68,10 +124,6 @@
 				"theTimer"
 			],
 			[
-				"re",
-				"reset"
-			],
-			[
 				"fu",
 				"fun\tFunction"
 			],
@@ -96,10 +148,6 @@
 				"document"
 			],
 			[
-				"us",
-				"user"
-			],
-			[
 				"user",
 				"users"
 			],
@@ -112,10 +160,6 @@
 				"json_decode"
 			],
 			[
-				"Ca",
-				"Cache::get\tRetrieve an Item from the Cache"
-			],
-			[
 				"me",
 				"message"
 			],
@@ -126,10 +170,6 @@
 			[
 				"m",
 				"massage"
-			],
-			[
-				"fun",
-				"function"
 			],
 			[
 				"DB",
@@ -175,6 +215,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "routes/api.php",
+			"settings":
+			{
+				"buffer_size": 1269,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/Transaction/TransactionCategoryController.php",
+			"settings":
+			{
+				"buffer_size": 485,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Transaction.php",
+			"settings":
+			{
+				"buffer_size": 524,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -246,13 +313,74 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/RestFullApi"
+		"/C/xampp/htdocs/RestFullApi",
+		"/C/xampp/htdocs/RestFullApi/app",
+		"/C/xampp/htdocs/RestFullApi/app/Http",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Transaction",
+		"/C/xampp/htdocs/RestFullApi/routes"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Transaction/TransactionCatregoryController.php",
+		"/C/xampp/htdocs/RestFullApi/app/Transaction.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Transaction/TransactionController.php",
+		"/C/xampp/htdocs/RestFullApi/app/Prodect.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Prodect/ProdectController.php",
+		"/C/xampp/htdocs/RestFullApi/app/Category.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Category/CategoryController.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Http/Request.php",
+		"/C/xampp/htdocs/RestFullApi/app/Exceptions/Handler.php",
+		"/C/xampp/htdocs/RestFullApi/routes/api.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/symfony/http-kernel/Tests/HttpCache/HttpCacheTestCase.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Support/Collection.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/ApiController.php",
+		"/C/xampp/htdocs/RestFullApi/routes/web.php",
+		"/C/xampp/htdocs/RestFullApi/app/User.php",
+		"/C/xampp/htdocs/RestFullApi/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/RestFullApi/database/migrations/2018_09_24_152051_category_prodect_table.php",
+		"/C/xampp/htdocs/RestFullApi/database/migrations/2018_09_21_082235_create_transactions_table.php",
+		"/C/xampp/htdocs/RestFullApi/database/migrations/2018_09_21_082126_create_prodects_table.php",
+		"/C/xampp/htdocs/RestFullApi/database/migrations/2018_09_21_081847_create_categories_table.php",
+		"/C/xampp/htdocs/RestFullApi/app/Seller.php",
+		"/C/xampp/htdocs/RestFullApi/app/scopes/SellerScope.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Seller/SellerController.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Buyer/BuyerController.php",
+		"/C/xampp/htdocs/RestFullApi/app/scopes/BuyerScope.php",
+		"/C/xampp/htdocs/RestFullApi/app/Buyer.php",
+		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/User/UserController.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/phpunit/php-timer/src/Exception.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/league/flysystem/src/Exception.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/symfony/http-kernel/Exception/HttpException.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/mockery/mockery/library/Mockery/Exception.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/mockery/mockery/library/Mockery/Exception/RuntimeException.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemAdapter.php",
+		"/C/xampp/htdocs/RestFullApi/public/index.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/filp/whoops/src/Whoops/Util/TemplateHelper.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Contracts/Debug/ExceptionHandler.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/symfony/debug/ExceptionHandler.php",
+		"/C/xampp/htdocs/RestFullApi/app/Traits/ApiResponser.php",
+		"/C/xampp/htdocs/RestFullApi/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/RestFullApi/database/factories/UserFactory.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/fzaninotto/faker/src/Faker/Provider/Lorem.php",
+		"/C/xampp/htdocs/RestFullApi/config/database.php",
+		"/C/xampp/htdocs/RestFullApi/.env",
+		"/C/xampp/htdocs/RestFullApi/app/Providers/AppServiceProvider.php",
+		"/C/xampp/htdocs/RestFullApi/app/Console/Kernel.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Notifications/Notifiable.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Notifications/RoutesNotifications.php",
+		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Notifications/HasDatabaseNotifications.php",
+		"/C/xampp/htdocs/RestFullApi/Homestead.yaml",
+		"/C/xampp/htdocs/RestFullApi/app/Providers/RouteServiceProvider.php",
+		"/C/xampp/htdocs/RestFullApi/app/seller.php",
+		"/C/Users/hamdi/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
 		"/C/xampp/htdocs/RestFullApi/app/p.php",
 		"/C/xampp/htdocs/RestFullApi/.editorconfig",
-		"/C/xampp/htdocs/RestFullApi/app/User.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/VerifyCsrfToken.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/TrustProxies.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/TrimStrings.php",
@@ -321,67 +449,11 @@
 		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_07/script.js",
 		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_06/index.html",
 		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_06/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_05/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_05/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_04/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_04/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_02/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_02/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_02/style.css",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_05/JS/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_05/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_04/JS/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_04/mouse-tracker.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_04/JS/tracker-script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_03/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/07_03/JS/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/06_07_DONE/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/06_07/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/06_02/style.css",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/06_02/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/06_02/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/05_07/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/05_07/JS/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/05_06/JS/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/05_06/moonwalk.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/05_05/JS/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_12/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_12/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_10/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_10/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_08/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_08/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_07/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_07/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_06/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_06/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_05/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_05/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_04/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_04/04_04/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_04/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_02/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_02/script.js",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_01/index.html",
-		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/04_01/script.js",
-		"/C/xampp/htdocs/realtime-redis-app/routes/web.php",
-		"/C/xampp/htdocs/realtime-redis-app/config/broadcasting.php",
-		"/C/xampp/htdocs/realtime-redis-app/resources/views/welcome.blade.php",
-		"/C/xampp/htdocs/realtime-redis-app/socket.js",
-		"/C/xampp/htdocs/realtime-redis-app/app/Events/UserSignedUp.php",
-		"/C/xampp/htdocs/realtime-redis-app/.env",
-		"/C/xampp/htdocs/realtime-redis-app/config/database.php",
-		"/C/xampp/htdocs/realtime-redis-app/config/cache.php",
-		"/C/Users/hamdi/Desktop/chat-lasson/node_modules/vue/src/core/instance/index.js",
-		"/C/Users/hamdi/Desktop/chat-lasson/node_modules/vue/dist/vue.js",
-		"/C/Users/hamdi/AppData/Roaming/Sublime Text 3/Packages/User/42-headers.sublime-settings",
-		"/C/Users/hamdi/Desktop/imagen fun/test.php",
-		"/C/xampp/htdocs/track-document/app/Http/Controllers/DocumentController.php",
-		"/C/xampp/htdocs/track-document/resources/views/document/show.blade.php"
+		"/E/developer/دورات/start/Front End/JavaScript-Essential-Training/project/Ex_Files_JavaScript_EssT/Exercise Files/08_05/script.js"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -395,6 +467,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"']]);\n",
+			"',\n",
+			";\n",
+			"AVAILABLE_PRODCY",
+			"UNAVAILABLE_PRODECY"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -412,14 +489,120 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "routes/api.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1269,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1178,
+								1178
+							]
+						],
+						"settings":
+						{
+							"SL.13.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.30.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/Transaction/TransactionCategoryController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								149,
+								178
+							]
+						],
+						"settings":
+						{
+							"SL.20.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Transaction.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								347,
+								347
+							]
+						],
+						"settings":
+						{
+							"SL.22.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -460,7 +643,7 @@
 	"project": "RestFullApi.sublime-project",
 	"replace":
 	{
-		"height": 73.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -471,7 +654,7 @@
 		[
 			[
 				"",
-				".editorconfig"
+				"app\\Transaction.php"
 			],
 			[
 				"Comma",
@@ -506,7 +689,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 304.0,
+	"side_bar_width": 333.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
