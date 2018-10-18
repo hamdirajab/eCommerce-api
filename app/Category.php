@@ -17,10 +17,14 @@ class Category extends Model
     	'description',
     ];
 
+    protected $hidden = [
+        'pivot'
+    ];
+
     // relation
     public function prodects()
     {
-    	$this->belongsToMany(Prodect::class);
+    	return $this->belongsToMany(Prodect::class);
     }
 
 }

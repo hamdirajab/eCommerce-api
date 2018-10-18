@@ -17,34 +17,43 @@
 //    return $request->user();
 //});
 
-// Buyers
+/** 
+*  Buyers 
+*/
 Route::resource('/buyers','Buyer\BuyerController',['only'=>['index','show']]);
-
-// Buyers Transaction
+Route::resource('/buyers.sellers','Buyer\BuyerSellerController',['only'=>['index']]);
+Route::resource('/buyers.prodects','Buyer\BuyerProdectController',['only'=>['index']]);
+Route::resource('/buyers.categorys','Buyer\BuyerCategoryController',['only'=>['index']]);
 Route::resource('/buyers.transactions','Buyer\BuyerTransactionController',['only'=>['index']]);
 
-// Buyers Prodect
-Route::resource('/buyers.prodects','Buyer\BuyerProdectController',['only'=>['index']]);
-
-// Sellers
+/** 
+*  Sellers
+*/
 Route::resource('/sellers','Seller\SellerController',['only' => ['index','show']]);
 
-// Prodects
+/** 
+*  Prodects
+*/
 Route::resource('/prodects','Prodect\ProdectController',['only' => ['index','show']]);
 
-// Categorys
+/** 
+*  Categorys
+*/
 Route::resource('/categorys','Category\CategoryController',['except'=>['create','edit']]);
+Route::resource('/categorys.buyers','Category\CategoryBuyerController',['only' => ['index']]);
+Route::resource('/categorys.sellers','Category\CategorySellerController',['only' => ['index']]);
+Route::resource('/categorys.prodects','Category\CategoryProdectController',['only' => ['index']]);
+Route::resource('/categorys.transactions','Category\CategoryTransactionController',['only' => ['index']]);
 
-// Transactions
+/** 
+*  Transactions 
+*/
 Route::resource('/transactions','Transaction\TransactionController',['only'=>['index','show']]);
-
-// Transactions Categorys
+Route::resource('/transactions.sellers','Transaction\TransactionSellerController',['only'=>['index']]);
 Route::resource('/transactions.categorys','Transaction\TransactionCategoryController',['only'=>['index']]);
 
-// Transactions Seller
-Route::resource('/transactions.sellers','Transaction\TransactionSellerController',['only'=>['index']]);
-
-
-// Users
+/** 
+*  Users
+*/
 Route::resource('/users','User\UserController',['except'=>['create','edit']]);
 

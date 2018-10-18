@@ -26,6 +26,10 @@ class Prodect extends Model
     	'seller_id',
     ];
 
+    protected $hidden = [
+        'pivot'
+    ];
+
 
     public function isAvailable()
     {
