@@ -25,16 +25,24 @@ Route::resource('/buyers.sellers','Buyer\BuyerSellerController',['only'=>['index
 Route::resource('/buyers.prodects','Buyer\BuyerProdectController',['only'=>['index']]);
 Route::resource('/buyers.categorys','Buyer\BuyerCategoryController',['only'=>['index']]);
 Route::resource('/buyers.transactions','Buyer\BuyerTransactionController',['only'=>['index']]);
+Route::resource('/buyers.transactions','Buyer\BuyerTransactionController',['only'=>['index']]);
 
 /** 
 *  Sellers
 */
 Route::resource('/sellers','Seller\SellerController',['only' => ['index','show']]);
+Route::resource('/sellers.buyers','Seller\SellerBuyerController',['only' => ['index']]);
+Route::resource('/sellers.prodects','Seller\SellerProdectController',['except' => ['create','show','edit']]);
+Route::resource('/sellers.categorys','Seller\SellerCategoryController',['only' => ['index']]);
+Route::resource('/sellers.transactions','Seller\SellerTransactionController',['only' => ['index']]);
 
 /** 
 *  Prodects
 */
 Route::resource('/prodects','Prodect\ProdectController',['only' => ['index','show']]);
+Route::resource('/prodects.buyers','Prodect\ProdectBuyerController',['only' => ['index']]);
+Route::resource('/prodects.categorys','Prodect\ProdectCategoryController',['only' => ['index','update','destroy']]);
+Route::resource('/prodects.buyers.transactions','Prodect\ProdectBuyerTransactionController',['only' => ['store']]);
 
 /** 
 *  Categorys
@@ -56,4 +64,8 @@ Route::resource('/transactions.categorys','Transaction\TransactionCategoryContro
 *  Users
 */
 Route::resource('/users','User\UserController',['except'=>['create','edit']]);
+Route::name('verify')->get('users/verfiy/{token}' , 'User\UserController@verfiy');
+
+
+
 

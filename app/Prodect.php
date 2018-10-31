@@ -53,5 +53,4 @@ class Prodect extends Model
         return $this->belongsToMany(Category::class);
     }
 
-
 }
