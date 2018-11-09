@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Mail\UserCreated;
+use App\Mail\UserMailChanged;
 use App\Prodect;
 use App\User;
 use Illuminate\Support\Facades\Mail;
@@ -24,8 +25,18 @@ class AppServiceProvider extends ServiceProvider
 
         User::created(function($user){
             
-            Mail::to($user /*or $user->email*/)->send(new UserCreated($user));
+            retry(5 , function() use($user) {
+                Mail::to($user /*or $user->email*/)->send(new UserCreated($user));
+            },100/*ms*/);
 
+        });
+
+        User::updated(function($user){
+            if($user->isDirty('email')){
+                retry(5 , function() use($user) {
+                    Mail::to($user)->send(new UserMailChanged($user));
+                },100);
+            }
         });
 
         Prodect::updated(function($prodect){

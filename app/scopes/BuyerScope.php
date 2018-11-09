@@ -13,5 +13,4 @@ class BuyerScope implements Scope
 		$builder->has('transactions');
 	}
 
-
 }
