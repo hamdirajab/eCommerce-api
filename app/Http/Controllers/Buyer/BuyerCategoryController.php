@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Buyer;
 
 use App\Buyer;
-use Illuminate\Http\Request;
 use App\Http\Controllers\ApiController;
 
 class BuyerCategoryController extends ApiController
@@ -21,8 +20,6 @@ class BuyerCategoryController extends ApiController
                            ->collapse()   // to convert the collection of collection to one collection b
                            ->unique('id')
                            ->values();
-
-
 
         return $this->showAll($categorys);
 

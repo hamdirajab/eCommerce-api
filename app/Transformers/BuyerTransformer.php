@@ -22,6 +22,47 @@ class BuyerTransformer extends TransformerAbstract
             'creationDate' => (string) $buyer->created_at,
             'lastChange'   => (string) $buyer->updated_at,
             'deletedDate'  => isset($buyer->deleted_at) ? (string) $buyer->deleted_at : null,
+            'links' => [
+                [
+                    'rel'  => 'self',
+                    'href' => route('sellers.show' , $buyer->id),
+                ],
+                [
+                    'rel'  => 'buyer.sellers',
+                    'href' => route('buyers.sellers.index' , $buyer->id),
+                ],
+                [
+                    'rel'  => 'buyer.categorys',
+                    'href' => route('buyers.categorys.index' , $buyer->id),
+                ],
+                [
+                    'rel'  => 'buyer.prodects',
+                    'href' => route('buyers.prodects.index' , $buyer->id),
+                ],
+                [
+                    'rel'  => 'buyer.transactions',
+                    'href' => route('buyers.transactions.index' , $buyer->id),
+                ],
+                [
+                    'rel'  => 'user',
+                    'href' => route('users.show' , $buyer->id),
+                ]
+            ]
         ];
+    }
+    public static function originalAttribute($index)
+    {
+        $attribute =  [
+            'identifier'   => 'id',
+            'name'         => 'name',
+            'email'        => 'email',
+            'isVerified'   => 'verified',
+            'creationDate' => 'created_at',
+            'lastChange'   => 'updated_at',
+            'deletedDate'  => 'deleted_at',
+        ];
+
+        return isset($attribute[$index]) ? $attribute[$index] : null ;
+
     }
 }

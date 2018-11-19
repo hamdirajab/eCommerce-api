@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"a",
+				"$attribute〔variable〕"
+			],
+			[
+				"ori",
+				"originalAttribute"
+			],
+			[
+				"sort",
+				"sortBy〔variable〕"
+			],
+			[
+				"c",
+				"$collection〔variable〕"
+			],
+			[
+				"tran",
+				"$transformaiton〔variable〕"
+			],
+			[
+				"tra",
+				"$transformer〔variable〕"
+			],
+			[
 				"res",
 				"response\tL5 Response"
 			],
@@ -164,10 +188,6 @@
 				"second"
 			],
 			[
-				"a",
-				"appendChild"
-			],
-			[
 				"doc",
 				"document"
 			],
@@ -249,10 +269,19 @@
 			}
 		},
 		{
+			"file": "app/Traits/ApiResponser.php",
+			"settings":
+			{
+				"buffer_size": 2084,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "app/Transformers/UserTransformer.php",
 			"settings":
 			{
-				"buffer_size": 302,
+				"buffer_size": 1271,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -329,10 +358,27 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/RestFullApi",
-		"/C/xampp/htdocs/RestFullApi/app"
+		"/C/xampp/htdocs/RestFullApi/app",
+		"/C/xampp/htdocs/RestFullApi/app/Transformers"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/RestFullApi/database/migrations/2018_09_21_082126_create_prodects_table.php",
+		"/C/xampp/htdocs/RestFullApi/app/Traits/ApiResponser.php",
+		"/C/xampp/htdocs/RestFullApi/app/Transformers/CategoryTransformer.php",
+		"/C/xampp/htdocs/RestFullApi/app/Transformers/BuyerTransformer.php",
+		"/C/xampp/htdocs/RestFullApi/app/Transformers/SellerTransformer.php",
+		"/C/xampp/htdocs/RestFullApi/app/Transformers/ProdectTransformer.php",
+		"/C/xampp/htdocs/RestFullApi/app/Transformers/UserTransformer.php",
+		"/C/xampp/htdocs/RestFullApi/app/Transformers/TransactionTransformer.php",
+		"/C/xampp/htdocs/RestFullApi/app/User.php",
+		"/C/xampp/htdocs/RestFullApi/app/Buyer.php",
+		"/C/xampp/htdocs/RestFullApi/app/Category.php",
+		"/C/xampp/htdocs/RestFullApi/app/Prodect.php",
+		"/C/xampp/htdocs/RestFullApi/app/Seller.php",
+		"/C/xampp/htdocs/RestFullApi/app/Transaction.php",
+		"/C/xampp/htdocs/RestFullApi/database/migrations/2018_09_24_152051_category_prodect_table.php",
+		"/C/xampp/htdocs/RestFullApi/database/migrations/2018_09_21_082235_create_transactions_table.php",
 		"/C/Users/hamdi/AppData/Roaming/Sublime Text 3/Packages/User/PHP Companion.sublime-settings",
 		"/C/Users/hamdi/AppData/Roaming/Sublime Text 3/Packages/PHP Companion/PHP Companion.sublime-settings",
 		"/C/xampp/htdocs/RestFullApi/config/app.php",
@@ -354,7 +400,6 @@
 		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/CustomTrottleRequest.php",
 		"/C/xampp/htdocs/RestFullApi/vendor/guzzlehttp/psr7/src/MultipartStream.php",
 		"/C/xampp/htdocs/RestFullApi/vendor/guzzlehttp/psr7/src/MessageTrait.php",
-		"/C/xampp/htdocs/RestFullApi/app/Traits/ApiResponser.php",
 		"/C/xampp/htdocs/RestFullApi/app/Providers/RouteServiceProvider.php",
 		"/C/xampp/htdocs/RestFullApi/app/Providers/AppServiceProvider.php",
 		"/C/xampp/htdocs/RestFullApi/storage/logs/laravel.log",
@@ -363,7 +408,6 @@
 		"/C/xampp/htdocs/RestFullApi/app/Mail/UserMailChanged.php",
 		"/C/xampp/htdocs/RestFullApi/app/Mail/UserCreated.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/User/UserController.php",
-		"/C/xampp/htdocs/RestFullApi/app/User.php",
 		"/C/xampp/htdocs/RestFullApi/app/Mail/Test.php",
 		"/C/xampp/htdocs/RestFullApi/resources/views/emails/test.blade.php",
 		"/C/xampp/htdocs/RestFullApi/database/seeds/DatabaseSeeder.php",
@@ -376,8 +420,6 @@
 		"/C/xampp/htdocs/RestFullApi/.env.example",
 		"/C/xampp/htdocs/RestFullApi/resources/assets/js/bootstrap.js",
 		"/C/xampp/htdocs/RestFullApi/resources/assets/js/app.js",
-		"/C/xampp/htdocs/RestFullApi/app/Prodect.php",
-		"/C/xampp/htdocs/RestFullApi/app/Transaction.php",
 		"/C/xampp/htdocs/RestFullApi/storage/framework/views/bbc30b214d78ab15fe8666e8a1960fd487a887bf.php",
 		"/C/xampp/htdocs/RestFullApi/storage/framework/views/986264c4d1e1f50c0e4e205add061e847267b704.php",
 		"/C/xampp/htdocs/RestFullApi/storage/framework/views/758e71c9ccbe4ef741133f758ad98aec5b15d5b4.php",
@@ -394,12 +436,9 @@
 		"/C/xampp/htdocs/RestFullApi/public/img/.gitiqnore",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Prodect/ProdectBuyerTransactionController.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Prodect/ProdectTransactionController.php",
-		"/C/xampp/htdocs/RestFullApi/app/Buyer.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Prodect/ProdectCategoryController.php",
-		"/C/xampp/htdocs/RestFullApi/app/Category.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Prodect/ProdectBuyerController.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Prodect/ProdectController.php",
-		"/C/xampp/htdocs/RestFullApi/app/Seller.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Seller/SellerBuyerController.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Seller/SellerCategoryController.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Seller/SellerTransactionController.php",
@@ -424,9 +463,6 @@
 		"/C/xampp/htdocs/RestFullApi/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/ApiController.php",
 		"/C/xampp/htdocs/RestFullApi/routes/web.php",
-		"/C/xampp/htdocs/RestFullApi/database/migrations/2018_09_24_152051_category_prodect_table.php",
-		"/C/xampp/htdocs/RestFullApi/database/migrations/2018_09_21_082235_create_transactions_table.php",
-		"/C/xampp/htdocs/RestFullApi/database/migrations/2018_09_21_082126_create_prodects_table.php",
 		"/C/xampp/htdocs/RestFullApi/database/migrations/2018_09_21_081847_create_categories_table.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Seller/SellerController.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Controllers/Buyer/BuyerController.php",
@@ -454,13 +490,7 @@
 		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/VerifyCsrfToken.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/TrustProxies.php",
 		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/TrimStrings.php",
-		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/RedirectIfAuthenticated.php",
-		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/EncryptCookies.php",
-		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/CheckForMaintenanceMode.php",
-		"/C/xampp/htdocs/WP/wp-content/themes/Glaobl universty/functions.php",
-		"/C/xampp/htdocs/WP/wp-content/themes/Glaobl universty/index.php",
-		"/C/xampp/htdocs/WP/wp-content/themes/Glaobl universty/page.php",
-		"/C/xampp/htdocs/WP/wp-content/themes/Glaobl universty/footer.php"
+		"/C/xampp/htdocs/RestFullApi/app/Http/Middleware/RedirectIfAuthenticated.php"
 	],
 	"find":
 	{
@@ -478,6 +508,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"user",
 			";\n",
 			"']]);\n",
 			"',\n",
@@ -517,8 +548,8 @@
 						"selection":
 						[
 							[
-								1311,
-								1311
+								544,
+								544
 							]
 						],
 						"settings":
@@ -537,45 +568,80 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 342.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/Transformers/UserTransformer.php",
+					"file": "app/Traits/ApiResponser.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 302,
+						"buffer_size": 2084,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								237,
-								237
+								1592,
+								1592
 							]
 						],
 						"settings":
 						{
-							"SL.17.region_keys":
+							"SL.14.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.63.region_keys":
 							[
 								"sublime_linter.protected_regions"
 							],
 							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1026.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Transformers/UserTransformer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.16.region_keys":
+							[
+							],
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 342.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
