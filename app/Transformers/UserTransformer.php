@@ -18,6 +18,8 @@ class UserTransformer extends TransformerAbstract
             'identifier'   => (int) $user->id,
             'name'         => (string) $user->name,
             'email'        => (string) $user->email,
+            'password'     => (string) $user->password,
+            'password_confirmation'=> request()->password_confirmation,
             'isVerified'   => (int) $user->verified,
             'isAdmin'      => ($user->admin === 'true'),
             'creationDate' => (string) $user->created_at,
@@ -38,11 +40,33 @@ class UserTransformer extends TransformerAbstract
             'identifier'   => 'id',
             'name'         => 'name',
             'email'        => 'email',
+            'password'     => 'password',
+            'password_confirmation' => 'password_confirmation',
             'isVerified'   => 'verified',
             'isAdmin'      => 'admin',
             'creationDate' => 'created_at',
             'lastChange'   => 'updated_at',
             'deletedDate'  => 'deleted_at',
+        ];
+
+        return isset($attribute[$index]) ? $attribute[$index] : null ;
+
+    }
+
+    public static function transformerAttribute($index)
+    {
+        $attribute =  [
+           'id'         => 'identifier',
+           'name'       => 'name',
+           'email'      => 'email',
+           'password'     => 'password',
+           'password_confirmation' => 'password_confirmation',
+           'verified'   => 'isVerified',
+           'created_at' => 'creationDate',
+           'admin'      => 'isAdmin',
+           'updated_at' => 'lastChange',
+           'deleted_at' => 'deletedDate',
+         
         ];
 
         return isset($attribute[$index]) ? $attribute[$index] : null ;

@@ -64,5 +64,7 @@ class Kernel extends HttpKernel
         'throttle' => \App\Http\Middleware\CustomTrottleRequest::class,
         
         'signature' => \App\Http\Middleware\SignatureMiddleware::class, // my create
+        'transform.inputs' => \App\Http\Middleware\TransformInput::class, // my create
+
     ];
 }

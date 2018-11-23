@@ -50,6 +50,7 @@ class SellerTransformer extends TransformerAbstract
             ]
         ];
     }
+
     public static function originalAttribute($index)
     {
         $attribute =  [
@@ -60,6 +61,21 @@ class SellerTransformer extends TransformerAbstract
             'creationDate' => 'created_at',
             'lastChange'   => 'updated_at',
             'deletedDate'  => 'deleted_at',
+        ];
+
+        return isset($attribute[$index]) ? $attribute[$index] : null ;
+    }
+
+    public static function transformerAttribute($index)
+    {
+        $attribute =  [
+            'id'         => 'identifier',
+            'name'       => 'name',
+            'email'      => 'email',
+            'verified'   => 'isVerified',
+            'created_at' => 'creationDate',
+            'updated_at' => 'lastChange',
+            'deleted_at' => 'deletedDate',
         ];
 
         return isset($attribute[$index]) ? $attribute[$index] : null ;
