@@ -18,8 +18,6 @@ class UserTransformer extends TransformerAbstract
             'identifier'   => (int) $user->id,
             'name'         => (string) $user->name,
             'email'        => (string) $user->email,
-            'password'     => (string) $user->password,
-            'password_confirmation'=> request()->password_confirmation,
             'isVerified'   => (int) $user->verified,
             'isAdmin'      => ($user->admin === 'true'),
             'creationDate' => (string) $user->created_at,
