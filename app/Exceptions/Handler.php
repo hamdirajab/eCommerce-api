@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Database\QueryException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Http\Exceptions\ThrottleRequestsException;
+use Illuminate\Session\TokenMismatchException;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
@@ -57,6 +58,7 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+
         if ($exception instanceof ValidationException) 
         {
              return $this->convertValidationExceptionToResponse($exception,$request);
@@ -98,16 +100,24 @@ class Handler extends ExceptionHandler
             }
         }
 
-        if($exception instanceof ThrottleRequestsException){
 
+        if($exception instanceof ThrottleRequestsException)
+        {
             return $this->errorResponse('Too Many Attempts.',429);
-
         }
 
-        if (config('app.debug')) {
 
+        if($exception instanceof TokenMismatchException)
+        {
+            return redirect()->back()->withInput($request->input());
+        }
+
+
+        if (config('app.debug')) 
+        {
            return parent::render($request, $exception);
         }
+
 
         return $this->errorResponse("Unexpected Exception, Try Later" , 500);
     }
@@ -121,13 +131,33 @@ class Handler extends ExceptionHandler
      */
     protected function convertValidationExceptionToResponse(ValidationException $e, $request)
     {
+
         $errors = $e->validator->errors()->getMessages();
         
+        
+        if ($this->isFrontend($request)) {
+
+            return $request->ajax() ? response()->json($error , 422) : redirect()
+                    ->back()
+                    ->withInput($request->input())
+                    ->withErrors($errors);    
+        }
+
         return $this->errorResponse($errors , 422);
     }
 
     protected function unauthenticated($request, AuthenticationException $exception)
     {
+        if($this->isFrontend($request))
+        {
+            return redirect()->guest('login');
+        }
+
         return $this->errorResponse(['unauthenticated'] , 401);
+    }
+
+    public function isFrontend($request)
+    {
+        return $request->acceptsHtml() && collect($request->route()->middleware())->contains('web');
     }
 }
