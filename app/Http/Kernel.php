@@ -58,6 +58,11 @@ class Kernel extends HttpKernel
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
+
+        'client.credentials' => \Laravel\Passport\Http\Middleware\CheckClientCredentials::class, // my use it from passport
+        'scopes' => \Laravel\Passport\Http\Middleware\CheckScopes::class, // my use it from passport
+        'scope' => \Laravel\Passport\Http\Middleware\CheckForAnyScope::class, // my use it from passport
+
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
 

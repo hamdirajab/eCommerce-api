@@ -6,6 +6,7 @@ use App\Http\Controllers\ApiController;
 use App\Prodect;
 use App\Seller;
 use App\User;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpKernel\Exception\HttpException;
@@ -17,7 +18,9 @@ class SellerProdectController extends ApiController
     {
         parent::__construct();
         $this->middleware('transform.inputs:' . ProdectTransformer::class)->only(['store' , 'update']);
+        $this->middleware('scope:manage-products')->except(['index']);
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -25,10 +28,14 @@ class SellerProdectController extends ApiController
      */
     public function index(Seller $seller)
     {
-       $prodects = $seller->prodects;
+        if (request()->user()->tokenCan('read-general') || request()->user()->tokenCan('manage-products')){
 
+            $prodects = $seller->prodects;
 
-        return $this->showAll($prodects);
+            return $this->showAll($prodects);
+        }
+
+        throw new AuthorizationException("Invalid scope(s)");
     }
 
     /**
@@ -59,8 +66,6 @@ class SellerProdectController extends ApiController
         $prodect = Prodect::create($data);
 
         return $this->showOne($prodect);
-
-
     }
 
     /**
@@ -97,7 +102,7 @@ class SellerProdectController extends ApiController
 
             if ($prodect->isAvailable() && $prodect->categories()->count() == 0) {
                 
-                return $this->errorResponse('An active prodect must hava at least one category' , 409);
+                return $this->errorResponse('An active product must have at least one category' , 409);
                 
             }
 
@@ -145,11 +150,8 @@ class SellerProdectController extends ApiController
     {
        if ($seller->id != $prodect->seller_id) {
            
-           throw new HttpException(422, 'The specified seller is not the actual seller of the prodect');
-           
+           throw new HttpException(422, 'The specified seller is not the actual seller of the product');
 
        }
-
-
     }
 }

@@ -22,5 +22,4 @@ class Seller extends User
     {
     	return $this->hasMany(Prodect::class);
     }
-
 }

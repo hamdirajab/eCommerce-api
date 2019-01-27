@@ -6,13 +6,14 @@ use App\Transformers\UserTransformer;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable
 {
 
     use SoftDeletes;
 
-    use Notifiable;
+    use Notifiable , HasApiTokens;
 
     const   VERIFIED_USER = '1';
     const   UNVERIFIED_USER = '0';
@@ -23,14 +24,15 @@ class User extends Authenticatable
     public $transformer = UserTransformer::class;
     protected $table = 'users';
     protected $dates = ["deleted_at"];
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 
-        'email', 
+        'name',
+        'email',
         'password',
         'verified',
         'verification_token',
@@ -43,7 +45,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 
+        'password',
         'remember_token',
         'verification_token',
     ];
@@ -65,7 +67,7 @@ class User extends Authenticatable
     {
         $this->attributes['email'] = strtolower($email);
     }
-    
+
 
     public function isVerified()
     {
@@ -74,7 +76,7 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        return $this->admin == User::ADMIN_USER;        
+        return $this->admin == User::ADMIN_USER;
     }
 
     public static function generateVerificationCode()
