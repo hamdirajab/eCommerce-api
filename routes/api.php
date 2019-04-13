@@ -12,20 +12,21 @@
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
 //
 //Route::middleware('auth:api')->get('/user', function (Request $request) {
 //    return $request->user();
 //});
 
-/** 
-*  Buyers 
+/**
+*  Buyers
 */
-Route::resource('/buyers','Buyer\BuyerController',['only'=>['index','show']]);
-Route::resource('/buyers.sellers','Buyer\BuyerSellerController',['only'=>['index']]);
-Route::resource('/buyers.prodects','Buyer\BuyerProdectController',['only'=>['index']]);
-Route::resource('/buyers.categorys','Buyer\BuyerCategoryController',['only'=>['index']]);
-Route::resource('/buyers.transactions','Buyer\BuyerTransactionController',['only'=>['index']]);
-Route::resource('/buyers.transactions','Buyer\BuyerTransactionController',['only'=>['index']]);
+Route::resource('/buyers', 'Buyer\BuyerController', ['only'=>['index','show']]);
+Route::resource('/buyers.sellers', 'Buyer\BuyerSellerController', ['only'=>['index']]);
+Route::resource('/buyers.prodects', 'Buyer\BuyerProdectController', ['only'=>['index']]);
+Route::resource('/buyers.categorys', 'Buyer\BuyerCategoryController', ['only'=>['index']]);
+Route::resource('/buyers.transactions', 'Buyer\BuyerTransactionController', ['only'=>['index']]);
+Route::resource('/buyers.transactions', 'Buyer\BuyerTransactionController', ['only'=>['index']]);
 
 /** 
 *  Sellers
@@ -37,7 +38,7 @@ Route::resource('/sellers.categorys','Seller\SellerCategoryController',['only' =
 Route::resource('/sellers.transactions','Seller\SellerTransactionController',['only' => ['index']]);
 
 /** 
-*  Prodects
+*  Products
 */
 Route::resource('/prodects','Prodect\ProdectController',['only' => ['index','show']]);
 Route::resource('/prodects.buyers','Prodect\ProdectBuyerController',['only' => ['index']]);
@@ -46,7 +47,7 @@ Route::resource('/prodects.transactions','Prodect\ProdectTransactionController',
 Route::resource('/prodects.buyers.transactions','Prodect\ProdectBuyerTransactionController',['only' => ['store']]);
 
 /** 
-*  Categorys
+*  Categories
 */
 Route::resource('/categorys','Category\CategoryController',['except'=>['create','edit']]);
 Route::resource('/categorys.buyers','Category\CategoryBuyerController',['only' => ['index']]);

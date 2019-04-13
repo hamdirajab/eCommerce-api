@@ -19,6 +19,7 @@ class CategoryProdectController extends ApiController
      */
     public function index(Category $category)
     {
+
         $prodects = $category->prodects;
 
         return $this->showAll($prodects);

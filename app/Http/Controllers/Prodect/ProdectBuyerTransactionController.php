@@ -18,6 +18,8 @@ class ProdectBuyerTransactionController extends ApiController
         parent::__construct();
         $this->middleware('transform.inputs:' . TransactionTransformer::class)->only(['store']);
         $this->middleware('scope:purchase-product')->only(['store']);
+        $this->middleware('can:purchase,buyer')->only('store');
+
     }
 
     /**
@@ -60,7 +62,6 @@ class ProdectBuyerTransactionController extends ApiController
             return $this->errorResponse('The prodect dose not have enougth units for this transaction' , 409);
         }
 
-
         return DB::transaction(function() use ($request , $prodect , $buyer){
             $prodect->quantity -= $request->quantity;
             $prodect->save();
@@ -74,8 +75,6 @@ class ProdectBuyerTransactionController extends ApiController
 
             return $this->showOne($transaction , 201);
         });
-
-
     }
 
 }

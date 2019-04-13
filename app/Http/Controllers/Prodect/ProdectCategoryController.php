@@ -14,6 +14,10 @@ class ProdectCategoryController extends ApiController
         $this->middleware('client.credentials')->only(['index']);
         $this->middleware('auth:api')->except(['index']);
         $this->middleware('scope:manage-products')->except(['index']);
+
+        $this->middleware('can:add-category,prodect')->only('update');
+        $this->middleware('can:delete-category,prodect')->only('destroy');
+
     }
 
     /**
@@ -23,6 +27,7 @@ class ProdectCategoryController extends ApiController
      */
     public function index(Prodect $prodect)
     {
+
         $categorys = $prodect->categories;
 
         return $this->showAll($categorys);

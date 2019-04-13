@@ -19,6 +19,8 @@ class ProdectTransactionController extends ApiController
      */
     public function index(Prodect $prodect)
     {
+        $this->allowedAdminAction();
+
         $transactions = $prodect->transactions;
 
 

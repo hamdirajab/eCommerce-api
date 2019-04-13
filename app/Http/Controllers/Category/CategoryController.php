@@ -15,6 +15,7 @@ class CategoryController extends ApiController
         $this->middleware('auth:api')->except(['index' , 'show']);
         $this->middleware('transform.inputs:' . CategoryTransformer::class)->only(['store' , 'update']);
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -22,6 +23,8 @@ class CategoryController extends ApiController
      */
     public function index()
     {
+        $this->allowedAdminAction();
+
         $category = Category::all();
         
         return $this->showAll($category);
@@ -36,6 +39,8 @@ class CategoryController extends ApiController
      */
     public function store(Request $request)
     {
+
+        $this->allowedAdminAction();
 
         $rules = [
             'name' => 'required',
@@ -70,7 +75,9 @@ class CategoryController extends ApiController
      */
     public function update(Request $request, Category $category)
     {
-        
+
+        $this->allowedAdminAction();
+
         $category->fill($request->only([
             'name',
             'description',
@@ -98,6 +105,8 @@ class CategoryController extends ApiController
      */
     public function destroy(Category $category)
     {
+        $this->allowedAdminAction();
+
         $category->delete();
 
         return $this->showOne($category);

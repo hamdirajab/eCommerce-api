@@ -8,10 +8,12 @@ use App\Http\Controllers\ApiController;
 
 class ProdectBuyerController extends ApiController
 {
+
     public function __construct()
     {
         parent::__construct();
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -19,7 +21,8 @@ class ProdectBuyerController extends ApiController
      */
     public function index(Prodect $prodect)
     {
-        
+        $this->allowedAdminAction();
+
         $buyers = $prodect->transactions()
                           ->with('buyer')
                           ->get()
@@ -27,7 +30,6 @@ class ProdectBuyerController extends ApiController
                           ->unique('id')
                           ->values();
 
-        
         return $this->showAll($buyers);
     }
 }

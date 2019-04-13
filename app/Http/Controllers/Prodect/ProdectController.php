@@ -20,7 +20,7 @@ class ProdectController extends ApiController
      */
     public function index()
     {
-        
+
         $prodects = Prodect::all();
 
         return $this->showAll($prodects);

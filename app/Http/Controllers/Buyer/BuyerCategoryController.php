@@ -11,7 +11,10 @@ class BuyerCategoryController extends ApiController
     {
         parent::__construct();
         $this->middleware('scope:read-general')->only(['index']);
+        $this->middleware('can:view,buyer'/* can obj of buyer or App/Buyer*/)->only('index');
+
     }
+
     /**
      * Display a listing of the resource.
      *

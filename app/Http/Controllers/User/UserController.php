@@ -19,6 +19,10 @@ class UserController extends ApiController
 
         $this->middleware('scope:manage-account')->only(['show' , 'update']);
 
+        $this->middleware('can:view,user')->only('show');
+        $this->middleware('can:update,user')->only('update');
+        $this->middleware('can:delete,user')->only('destroy');
+
     }
 
     /**
@@ -28,6 +32,7 @@ class UserController extends ApiController
      */
     public function index()
     {
+        $this->allowedAdminAction();
 
         $users = User::all();
 
@@ -88,9 +93,8 @@ class UserController extends ApiController
      */
     public function update(Request $request, User $user)
     {
-        
-        $rules = [
 
+        $rules = [
             'email' => 'email|unique:users,email,' . $user->id,
             'password' => 'min:6|confirmed',
             'admin' => 'in:' . User::ADMIN_USER . ',' . User::REGULAR_USER,
@@ -115,6 +119,8 @@ class UserController extends ApiController
         }
 
         if ($request->has('admin')) {
+
+            $this->allowedAdminAction();
 
             if (!$user->isVerified()) {
                 return $this->errorResponse('error','Only Verified User can modify the admin field',409);

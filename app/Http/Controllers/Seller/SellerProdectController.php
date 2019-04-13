@@ -19,6 +19,13 @@ class SellerProdectController extends ApiController
         parent::__construct();
         $this->middleware('transform.inputs:' . ProdectTransformer::class)->only(['store' , 'update']);
         $this->middleware('scope:manage-products')->except(['index']);
+
+        $this->middleware('can:view,seller')->only('index');
+        $this->middleware('can:sale,seller')->only('store');
+        $this->middleware('can:edit-product,seller')->only('update');
+        $this->middleware('can:delete-product,seller')->only('destroy');
+
+
     }
 
     /**
@@ -124,7 +131,6 @@ class SellerProdectController extends ApiController
         $prodect->save();
 
         return $this->showOne($prodect);
-
     }
 
     /**
@@ -142,16 +148,13 @@ class SellerProdectController extends ApiController
         Storage::delete($prodect->image);
 
         return $this->showOne($prodect);
-
     }
 
     
     public function checkSeller(Seller $seller , Prodect $prodect)
     {
        if ($seller->id != $prodect->seller_id) {
-           
            throw new HttpException(422, 'The specified seller is not the actual seller of the product');
-
        }
     }
 }
